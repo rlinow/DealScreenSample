@@ -1,3 +1,17 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-body { font-family: Roboto, Arial, sans-serif; }
+body { font-family: Roboto, Arial, sans-serif; padding: 0; margin: 0; }
+
+.app, .app>md-sidenav-container {
+    height: 100vh;
+}
+
+.mat-sidenav::-webkit-scrollbar, body::-webkit-scrollbar, md-sidenav.sidenav::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+}
+
+.mat-sidenav::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb, md-sidenav.sidenav::-webkit-scrollbar-thumb {
+    background-color: #6e6e6e;
+    outline: 1px solid #333;
+}
